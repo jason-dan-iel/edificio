@@ -1,0 +1,31 @@
+.about-main{
+    color: white;
+    margin: 0 10%;
+    padding: 5% 0;
+    font:  'Martian Mono', monospace;
+}
+
+.about-head{
+    font: 2.5em 'Martian Mono', monospace;
+    margin-bottom: 2%;
+    text-align: left;
+}
+.line1{
+    border: 1px solid #fff;
+}
+.about-text{
+    font: 1em 'Martian Mono', monospace;
+    text-decoration: dotted;
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px){
+    .about-head{
+        font-size: 1em;
+        margin-top: 20%;
+    }
+    .about-text{
+        font-size: 0.5em;
+    }
+    
+}

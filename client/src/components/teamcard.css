@@ -1,0 +1,137 @@
+.star {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #333;
+}
+
+.container {
+  max-width: 900px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 400px;
+  height: 500px;
+  position: relative;
+}
+
+.pagee{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 450px;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.card-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #000;
+  transition: transform 0.6s;
+  transform: translateY(-20%);
+}
+
+.card:hover .card-image {
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.6s;
+}
+
+.card:hover .card-image img {
+  /* opacity: 0.4; */
+}
+
+.social-icons {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: flex;
+}
+
+.social-icons li {
+  list-style: none;
+  margin: 0 6px;
+}
+
+.social-icons li a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #fff;
+  font-size: 23px;
+  color: #333;
+  font-weight: bold;
+  transition: 0.6s;
+  transform: translateY(00px);
+  opacity: 1;
+  margin-bottom: 100px;
+}
+
+.card:hover .social-icons li a {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.social-icons li a:hover {
+  /* background: #000; */
+}
+
+
+.social-icons li a:hover .fab {
+  transform: rotateY(360deg);
+  color: #fff;
+}
+
+.details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* margin-top: 100; */
+  background: #fff;
+  width: 100%;
+  color: #333;
+  height: 0px;
+  z-index: 1;
+  height: 110px;
+  /* padding: 10px; */
+}
+
+.card:hover .details {
+  transition: 0.6s;
+}
+
+.job-title {
+  font-size: 1rem;
+  line-height: 2.5rem;
+  color: #333;
+  font-weight: 300;
+}

@@ -1,0 +1,11 @@
+.Eventcards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    /* max-width: 1000px; */
+    list-style: none;
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+.team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .ourteam {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .teamdata {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }

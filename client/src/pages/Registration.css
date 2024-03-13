@@ -1,0 +1,90 @@
+.registration_main {
+  width: 100vw;
+  color: white;
+  height: 100vh;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 50px; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.team {
+  gap: 50px;
+}
+
+.registration_main button {
+  padding: 0.2em;
+  /* font-size: 1em; */
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button1 {
+  position: relative;
+  overflow: hidden;
+  height: 4rem;
+  width: 10rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.button1:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.payment1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.button1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
+
+.tnc {
+  font-size: 0.7em;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .registration_main {
+      font-size: 0.5em;
+  }
+
+  .button1 {
+      height: 3rem;
+      width: 5rem;
+      padding: 0 1.5rem;
+      border-radius: 1.5rem;
+  }
+}

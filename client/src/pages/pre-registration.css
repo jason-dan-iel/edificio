@@ -1,0 +1,159 @@
+.pre-registration-page {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Martian Mono", monospace;
+}
+
+.pre-registration-form-main {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+}
+
+.pre-registration-heading {
+  margin-top: 10vh;
+  font-family: "Share Tech", sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 7vh;
+  color: #ffffff;
+}
+
+.pre-registration-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 50%;
+  gap: 20px;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 0px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.field {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 14px;
+  vertical-align: baseline;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: .16px;
+  border-radius: 0;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #8d8d8d;
+  background-color: #f4f4f4;
+  padding: 0 16px;
+  color: #161616;
+  transition: background-color 70ms cubic-bezier(.2,0,.38,.9),outline 70ms cubic-bezier(.2,0,.38,.9); 
+} 
+
+.field:focus {
+  outline: 2px solid #0f62fe;
+  outline-offset: -2px;
+}
+
+.events-label {
+  font-size: 1.5em;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.events-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 0 0px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff;
+}
+
+.pre-registration-input[type="text"]:focus,
+.pre-registration-input[type="email"]:focus,
+.pre-registration-input[type="contact"]:focus,
+.pre-registration-input[type="year"]:focus,
+.pre-registration-input[type="state"]:focus,
+.pre-registration-input[type="city"]:focus,
+.pre-registration-input[type="gender"]:focus,
+.pre-registration-input[type="college"]:focus {
+  outline: 0;
+  border-color: transparent;
+}
+
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  /* margin-left: 17.5%; */
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #3770ff;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+@media only screen and (max-width: 900px) {
+  .pre-registration-form-main {
+      width: 100%;
+      background-color: rgba(128, 9, 134, 0.5);
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .pre-registration-heading {
+      font-size: 6vh;
+  }
+  .pre-registration-input {
+      min-width: 30vh;
+  }
+  .pre-registration-select {
+      min-width: 35vh;
+  }
+}
